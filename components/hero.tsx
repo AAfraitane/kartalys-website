@@ -1,5 +1,5 @@
-import VideoThumb from '@/public/images/hero-image-01.jpg'
-import ModalVideo from '@/components/modal-video'
+import laptopHomePage from '@/public/images/laptop-g7219fc466_1920.jpg'
+import Image from 'next/image'
 
 export default function Hero() {
   return (
@@ -24,27 +24,19 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">KartaLys</h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Votre solution sur mesure pour répondre aux défis IT en plein cœur de l'océan Indien et de l'Afrique !</p>
+            <h1 className="h1 mb-4 text-red-kartalys" data-aos="fade-up">KartaLys</h1>
+            <p className="text-xl text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="200">Votre solution sur mesure pour répondre aux défis IT en plein cœur de l'océan Indien et de l'Afrique !</p>
             {/* <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a className="btn text-white bg-red-600 hover:bg-red-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Start free trial</a>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
-                <a className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">Learn more</a>
+                <a className="btn text-white bg-gray-700 hover:bg-gray-300 w-full sm:w-auto sm:ml-4" href="#0">Learn more</a>
               </div>
             </div> */}
           </div>
 
-          <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={1024}
-            thumbHeight={576}
-            thumbAlt="Modal video thumbnail"
-            video="/videos/video.mp4"
-            videoWidth={1920}
-            videoHeight={1080} />
-
+          <Image src={laptopHomePage} width={1920} height={1080} alt="Laptop" />
         </div>
 
       </div>
