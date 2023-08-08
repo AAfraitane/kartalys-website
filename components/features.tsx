@@ -22,7 +22,7 @@ export default function Features() {
               </svg>
 
               <h4 className="h4 mb-2">kartaCloud</h4>
-              <p className="text-lg text-gray-600 text-center">
+              <p className="text-lg text-gray-600 text-justify">
                 Dans ce domaine, nous offrons
                 des solutions de cloud et
                 d'hébergement de premier ordre
@@ -39,7 +39,7 @@ export default function Features() {
                 <path className="stroke-current text-red-100" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square" />
               </svg>
               <h4 className="h4 mb-2">kartaSoft</h4>
-              <p className="text-lg text-gray-600 text-center">
+              <p className="text-lg text-gray-600 text-justify">
                 Cette branche se consacre au
                 développement de logiciels
                 novateurs pour répondre aux défis
@@ -58,7 +58,7 @@ export default function Features() {
                 </g>
               </svg>
               <h4 className="h4 mb-2">kartaSys</h4>
-              <p className="text-lg text-gray-600 text-center">
+              <p className="text-lg text-gray-600 text-justify">
                 Offrant des services
                 technologiques de premier plan,
                 cette branche est à l'avant-garde
@@ -77,7 +77,7 @@ export default function Features() {
               </svg>
 
               <h4 className="h4 mb-2">kartaPay</h4>
-              <p className="text-lg text-gray-600 text-center">
+              <p className="text-lg text-gray-600 text-justify">
                 C'est une plateforme de paiement
                 numérique novatrice conçue pour
                 digitaliser les paiements des marchands
