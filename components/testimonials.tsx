@@ -13,7 +13,7 @@ export default function Testimonials() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Notre équipe</h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-600 text-justify">
             Nous sommes une équipe d'experts hautement qualifiés, fort d'expériences acquises au sein de grands groupes, notamment chez BNP Paribas, Société Générale, Malakoff
             Humanis, IBM et Allianz. un groupe dynamique qui s'engage à redéfinir l'avenir technologique des Comores, de l'Afrique et de l'Océan Indien
             </p>
