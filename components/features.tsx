@@ -72,7 +72,9 @@ export default function Features() {
 
             {/* 4th item */}
             <div className="relative flex flex-col items-center col-start-2" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
-              <Image  width={22000} height={13500}  src={kartapayLogo} alt="Kartapay" />
+              <div className="my-8">
+                <Image  width={22000} height={13500}  src={kartapayLogo} alt="Kartapay" />
+              </div>
 
               <p className="text-lg text-gray-600 text-justify">
                 Il s'agit d'une plateforme de paiement
