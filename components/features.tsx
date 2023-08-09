@@ -1,3 +1,6 @@
+import kartapayLogo from '@/public/images/kartapay_flat_2_transparent.png'
+import Image from 'next/image'
+
 export default function Features() {
   return (
     <section>
@@ -34,9 +37,9 @@ export default function Features() {
             {/* 2nd item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="100" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <circle className="fill-current text-red-kartalys" cx="32" cy="32" r="32" />
-                <path className="stroke-current text-red-100" strokeWidth="2" strokeLinecap="square" d="M21 23h22v18H21z" fill="none" fillRule="evenodd" />
-                <path className="stroke-current text-red-100" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square" />
+                <circle className="fill-current text-green-800" cx="32" cy="32" r="32" />
+                <path className="stroke-current text-green-100" strokeWidth="2" strokeLinecap="square" d="M21 23h22v18H21z" fill="none" fillRule="evenodd" />
+                <path className="stroke-current text-green-100" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square" />
               </svg>
               <h4 className="h4 mb-2">kartaSoft</h4>
               <p className="text-lg text-gray-600 text-justify">
@@ -50,11 +53,11 @@ export default function Features() {
             {/* 3rd item */}
             <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="[data-aos-id-blocks]">
               <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect className="fill-current text-red-kartalys" width="64" height="64" rx="32" />
+                <rect className="fill-current text-yellow-500" width="64" height="64" rx="32" />
                 <g transform="translate(21 21)" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
-                  <ellipse className="stroke-current text-red-200" cx="11" cy="11" rx="5.5" ry="11" />
-                  <path className="stroke-current text-red-200" d="M11 0v22M0 11h22" />
-                  <circle className="stroke-current text-red-100" cx="11" cy="11" r="11" />
+                  <ellipse className="stroke-current text-yellow-700" cx="11" cy="11" rx="5.5" ry="11" />
+                  <path className="stroke-current text-yellow-700" d="M11 0v22M0 11h22" />
+                  <circle className="stroke-current text-yellow-700" cx="11" cy="11" r="11" />
                 </g>
               </svg>
               <h4 className="h4 mb-2">kartaSys</h4>
@@ -69,20 +72,14 @@ export default function Features() {
 
             {/* 4th item */}
             <div className="relative flex flex-col items-center col-start-2" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
-              <svg className="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <rect className="fill-current text-red-kartalys" width="64" height="64" rx="32" />
-                <g transform="translate(22 21)" strokeLinecap="square" strokeWidth="2" fill="none" fillRule="evenodd">
-                  <path className="stroke-current text-red-100" d="M21 12a2.25 2.25 0 00-2.25-2.25H15a3 3 0 11-6 0H5.25A2.25 2.25 0 003 12m18 0v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 9m18 0V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v3" />
-                </g>
-              </svg>
+              <Image  width={22000} height={13500}  src={kartapayLogo} alt="Kartapay" />
 
-              <h4 className="h4 mb-2">kartaPay</h4>
               <p className="text-lg text-gray-600 text-justify">
-                C'est une plateforme de paiement
+                Il s'agit d'une plateforme de paiement
                 numérique novatrice conçue pour
-                digitaliser les paiements des marchands
-                et des particuliers aux Comores. C'est un
-                agregateur de paiement.
+                digitaliser les paiements aux Comores. 
+                Sa fonction première est d'aggréger les différentns 
+                supports de paiement disponibles.
               </p>
             </div>
 
