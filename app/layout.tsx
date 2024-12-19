@@ -30,14 +30,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-white text-gray-700 tracking-tight`}>
+      <body
+        className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-white text-gray-700 tracking-tight`}
+      >
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
           {children}
+          <script
+            type="text/javascript"
+            id="hs-script-loader"
+            async
+            defer
+            src="//js-na1.hs-scripts.com/48549766.js"
+          ></script>
           <Banner />
         </div>
       </body>
     </html>
-  )
+  );
 }
  
