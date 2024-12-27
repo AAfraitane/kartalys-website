@@ -4,6 +4,7 @@ import { Inter, Architects_Daughter } from 'next/font/google'
 
 import Header from '@/components/ui/header'
 import Banner from '@/components/banner'
+import Script from 'next/script'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -30,14 +31,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-white text-gray-700 tracking-tight`}>
+      <body
+        className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-white text-gray-700 tracking-tight`}
+      >
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
           {children}
+          <Script
+            id="hs-script-loader"
+            src="//js.hs-scripts.com/48549766.js"
+            strategy="lazyOnload"
+          />
           <Banner />
         </div>
       </body>
     </html>
-  )
+  );
 }
  
