@@ -4,6 +4,7 @@ import { Inter, Architects_Daughter } from 'next/font/google'
 
 import Header from '@/components/ui/header'
 import Banner from '@/components/banner'
+import Script from 'next/script'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -36,13 +37,11 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header />
           {children}
-          <script
-            type="text/javascript"
+          <Script
             id="hs-script-loader"
-            async
-            defer
-            src="//js-na1.hs-scripts.com/48549766.js"
-          ></script>
+            src="//js.hs-scripts.com/48549766.js"
+            strategy="lazyOnload"
+          />
           <Banner />
         </div>
       </body>
